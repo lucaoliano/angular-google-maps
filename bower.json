@@ -1,6 +1,6 @@
 {
   "name": "angular-google-maps",
-  "version": "2.4.1",
+  "version": "2.4.2",
   "license": "MIT",
   "main": "./dist/angular-google-maps.js",
   "dependencies": {
@@ -14,21 +14,9 @@
     "js-rich-marker": "*"
   },
   "ignore": [
-    "*.json",
-    ".gitignore",
-    "travis.yml",
-    "*.html",
-    "package.js",
-    "*.markdown",
-    "example",
-    "src",
-    "grunt",
-    "website_libs",
-    "scripts",
-    "spec/coffee/directives",
-    "spec/coffee/providers",
-    "spec/coffee/usage",
-    "tmp",
+    "*",
+    "!*.md",
+    "!dist/*",
     "dist/coverage/",
     "dist/architecture/"
   ],

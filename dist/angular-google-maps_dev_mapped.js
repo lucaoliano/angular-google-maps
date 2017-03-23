@@ -1,4 +1,4 @@
-/*! angular-google-maps 2.4.1 2017-01-05
+/*! angular-google-maps 2.4.2 2017-03-23
  *  AngularJS directives for Google Maps
  *  git: https://github.com/angular-ui/angular-google-maps.git
  */
@@ -6811,6 +6811,7 @@ Original idea from: http://stackoverflow.com/questions/22758950/google-map-drawi
             });
             if (attrs.recycleMapInstance === 'true') {
               _gMap = uiGmapGoogleMapObjectManager.createMapInstance(el.find('div')[1], mapOptions);
+              google.maps.event.trigger(_gMap, 'resize');
             } else {
               _gMap = new google.maps.Map(el.find('div')[1], mapOptions);
             }
