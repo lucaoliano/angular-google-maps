@@ -106,6 +106,7 @@ angular.module('uiGmapgoogle-maps.directives.api')
 
             if attrs.recycleMapInstance == 'true'
               _gMap = uiGmapGoogleMapObjectManager.createMapInstance(el.find('div')[1], mapOptions)
+              google.maps.event.trigger(_gMap, 'resize')
             else
               _gMap = new google.maps.Map(el.find('div')[1], mapOptions)
             _gMap['uiGmap_id'] = uiGmapuuid.generate()
